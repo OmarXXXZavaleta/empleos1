@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title>Mensaje</title>
+</head>
+<body>
+<h1>Empleos app</h1>
+<h1 th:text="${msg}"></h1>
+<h2 th:text="'Bienvenidos: '+${msg}"></h2>
+<p>[[${msg}]]</p>
+<h3 th:text="'Inicio de laaplicacion: '+${fecha}"></h3>
+<h3 th:text="'Fecha: '+${#calendars.format(today,'dd MMMM yyyy')}"></h3>
+
+
+</body>
+</html>
